@@ -1,0 +1,24 @@
+--- ubah MySQL.ini
+
+1. menu - MySQL - MySQL.ini
+2. #default_authentication_plugin=mysql_native_password
+3 ctrl + s
+
+--- terminal
+
+1. ketik mysql -u root lalu enter
+2. ketik ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY ''; lalu enter
+3. ketik FLUSH PRIVILEGES; lalu enter
+4. ketik exit lalu enter
+
+--- buka sqlyog
+
+1. Host address : 127.0.0.1
+2. username : root
+3. port : 3306
+
+--- Start System
+
+1. buka terminal di laragon
+2. ketik cd alkesin lalu enter
+3. ketik php spark serve lalu enter
