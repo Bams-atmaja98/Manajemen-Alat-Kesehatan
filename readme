@@ -6,3 +6,28 @@ System ini menggunakan Setup
 5. CSS
 6. Javascript
 7. HTML5
+
+Gambaran umum
+Alkesin adalah sistem manajemen penjualan alat kesehatan berbasis web. Sistem ini dipakai oleh admin/kasir untuk mengelola data produk, mencatat transaksi pembelian pelanggan, dan menambah stok barang dari gudang. Tujuannya menggantikan pencatatan manual di buku, supaya stok, transaksi, dan struk tercatat otomatis dan akurat.
+
+Alur penggunaan
+
+Login. Admin membuka aplikasi dan memasukkan username dan password. Sistem memverifikasi akun. Kalau benar, admin masuk ke Dashboard. Kalau salah, muncul pesan kesalahan dan admin harus mengulang. Halaman lain tidak bisa dibuka tanpa login.
+Dashboard. Setelah login, admin melihat ringkasan: total produk, total stok, dan daftar produk terbaru. Dari sini admin berpindah ke menu lain lewat sidebar.
+Kelola Data Produk. Admin bisa menambah, mengubah, mencari, dan menghapus produk (kode, nama, kategori, harga). Kategori dipilih dari daftar. Jumlah stok tidak bisa diubah manual di menu ini, karena perubahan stok hanya boleh lewat transaksi atau menu Stok Gudang. Hal ini menjaga stok tetap konsisten.
+Transaksi Pembelian.
+Admin mengetik nama pelanggan.
+Admin memilih satu atau lebih produk beserta jumlahnya. Total harga dihitung otomatis.
+Admin memilih metode pembayaran: Tunai, Transfer, Debit, Kredit, atau QRIS.
+Sistem memeriksa stok. Kalau jumlah melebihi stok, sistem menolak dan admin menyesuaikan input.
+Kalau stok cukup, sistem menyimpan transaksi dengan status lunas, mengurangi stok produk, dan membuat nomor transaksi otomatis.
+Admin bisa membuka detail transaksi dan mencetak struk.
+Stok Gudang. Saat barang baru masuk, admin memilih produk, mengisi jumlah dan keterangan (misalnya nama supplier). Sistem mencatat riwayat stok masuk dan otomatis menambah stok produk tersebut.
+Logout. Admin keluar lewat tombol Logout di bagian bawah sidebar. Sesi diakhiri dan admin kembali ke halaman login.
+
+Aturan bisnis utama
+
+Semua transaksi langsung berstatus lunas, tanpa cicilan.
+Stok hanya berubah lewat dua jalur: berkurang oleh transaksi, bertambah oleh Stok Gudang.
+Nama pelanggan cukup diketik, tidak ada data master pelanggan.
+Setiap transaksi dan stok masuk memiliki nomor referensi dan waktu pencatatan (zona waktu WIB).
