@@ -9,10 +9,12 @@
 7. HTML5
 
 Demo UI: https://bams-atmaja98.github.io/Manajemen-Alat-Kesehatan/
+
 (Demo statis dengan data di browser. Versi lengkap butuh PHP & MySQL.)
 
 - Gambaran umum
-  Alkesin adalah sistem manajemen penjualan alat kesehatan berbasis web. Sistem ini dipakai oleh admin/kasir untuk mengelola data produk, mencatat transaksi pembelian pelanggan, dan menambah stok barang dari gudang. Tujuannya menggantikan pencatatan manual di buku, supaya stok, transaksi, dan struk tercatat otomatis dan akurat.
+
+Alkesin adalah sistem manajemen penjualan alat kesehatan berbasis web. Sistem ini dipakai oleh admin/kasir untuk mengelola data produk, mencatat transaksi pembelian pelanggan, dan menambah stok barang dari gudang. Tujuannya menggantikan pencatatan manual di buku, supaya stok, transaksi, dan struk tercatat otomatis dan akurat.
 
 - Alur penggunaan
 
