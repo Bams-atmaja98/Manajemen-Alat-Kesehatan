@@ -1,4 +1,4 @@
-* System ini menggunakan Setup
+- System ini menggunakan Setup
 
 1. Framework CI4
 2. Laragon
@@ -8,13 +8,13 @@
 6. Javascript
 7. HTML5
 
-Demo UI: https://Bams-atmaja98.github.io/Alkesin/
+Demo UI: https://bams-atmaja98.github.io/Manajemen-Alat-Kesehatan/
 (Demo statis dengan data di browser. Versi lengkap butuh PHP & MySQL.)
 
-* Gambaran umum
-Alkesin adalah sistem manajemen penjualan alat kesehatan berbasis web. Sistem ini dipakai oleh admin/kasir untuk mengelola data produk, mencatat transaksi pembelian pelanggan, dan menambah stok barang dari gudang. Tujuannya menggantikan pencatatan manual di buku, supaya stok, transaksi, dan struk tercatat otomatis dan akurat.
+- Gambaran umum
+  Alkesin adalah sistem manajemen penjualan alat kesehatan berbasis web. Sistem ini dipakai oleh admin/kasir untuk mengelola data produk, mencatat transaksi pembelian pelanggan, dan menambah stok barang dari gudang. Tujuannya menggantikan pencatatan manual di buku, supaya stok, transaksi, dan struk tercatat otomatis dan akurat.
 
-* Alur penggunaan
+- Alur penggunaan
 
 Login. Admin membuka aplikasi dan memasukkan username dan password. Sistem memverifikasi akun. Kalau benar, admin masuk ke Dashboard. Kalau salah, muncul pesan kesalahan dan admin harus mengulang. Halaman lain tidak bisa dibuka tanpa login.
 Dashboard. Setelah login, admin melihat ringkasan: total produk, total stok, dan daftar produk terbaru. Dari sini admin berpindah ke menu lain lewat sidebar.
@@ -29,7 +29,7 @@ Admin bisa membuka detail transaksi dan mencetak struk.
 Stok Gudang. Saat barang baru masuk, admin memilih produk, mengisi jumlah dan keterangan (misalnya nama supplier). Sistem mencatat riwayat stok masuk dan otomatis menambah stok produk tersebut.
 Logout. Admin keluar lewat tombol Logout di bagian bawah sidebar. Sesi diakhiri dan admin kembali ke halaman login.
 
-* Aturan bisnis utama
+- Aturan bisnis utama
 
 Semua transaksi langsung berstatus lunas, tanpa cicilan.
 Stok hanya berubah lewat dua jalur: berkurang oleh transaksi, bertambah oleh Stok Gudang.
